@@ -1,0 +1,738 @@
+
+/*
+Theme Name: Texas Honor Ride
+Theme URI: http://www.texashonorride.com/
+Description: Texas Honor Ride
+Version: 1.0
+Author: Beefy Marketing
+Author URI: http://beefymarketing.com
+*/
+
+@import url(css/gravity.css);
+
+@font-face {
+    font-family: 'oswaldbold';
+    src: url('fonts/Oswald-Bold-webfont.eot');
+    src: url('fonts/Oswald-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Oswald-Bold-webfont.woff2') format('woff2'),
+         url('fonts/Oswald-Bold-webfont.woff') format('woff'),
+         url('fonts/Oswald-Bold-webfont.ttf') format('truetype'),
+         url('fonts/Oswald-Bold-webfont.svg#oswaldbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'oswaldlight';
+    src: url('fonts/Oswald-Light-webfont.eot');
+    src: url('fonts/Oswald-Light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Oswald-Light-webfont.woff2') format('woff2'),
+         url('fonts/Oswald-Light-webfont.woff') format('woff'),
+         url('fonts/Oswald-Light-webfont.ttf') format('truetype'),
+         url('fonts/Oswald-Light-webfont.svg#oswaldlight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'oswald_stencilregular';
+    src: url('fonts/Oswald-Stencil-webfont.eot');
+    src: url('fonts/Oswald-Stencil-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Oswald-Stencil-webfont.woff2') format('woff2'),
+         url('fonts/Oswald-Stencil-webfont.woff') format('woff'),
+         url('fonts/Oswald-Stencil-webfont.ttf') format('truetype'),
+         url('fonts/Oswald-Stencil-webfont.svg#oswald_stencilregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'oswaldbook';
+    src: url('fonts/Oswald-Regular-webfont.eot');
+    src: url('fonts/Oswald-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Oswald-Regular-webfont.woff2') format('woff2'),
+         url('fonts/Oswald-Regular-webfont.woff') format('woff'),
+         url('fonts/Oswald-Regular-webfont.ttf') format('truetype'),
+         url('fonts/Oswald-Regular-webfont.svg#oswaldbook') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+/*------------- What is Normal Anyway --------------*/
+
+html body, select, input, textarea {
+    color: #000;
+    background-color: #4D0B0B;
+    margin: 0; 
+}
+a {
+    color: #03f;
+}
+
+iframe {
+    max-width: 100%;
+}
+
+img {
+    max-width: 100%;
+    height: auto !important;
+}
+
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+.center {
+  text-align: center;
+}
+.clear_right {
+  clear: right;
+}
+.no_pad {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+
+/* =WordPress Core
+-------------------------------------------------------------- */
+.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+.aligncenter,
+div.aligncenter {
+  display: block;
+  margin: 5px auto 5px auto;
+}
+
+.alignright {
+  float:right;
+  margin: 5px 0 20px 20px;
+}
+
+.alignleft {
+  float: left;
+  margin: 5px 20px 20px 0;
+}
+
+a img.alignright {
+  float: right;
+  margin: 5px 0 20px 20px;
+}
+
+a img.alignnone {
+  margin: 5px 20px 20px 0;
+}
+
+a img.alignleft {
+  float: left;
+  margin: 5px 20px 20px 0;
+}
+
+a img.aligncenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto
+}
+/*.............. Normalize Container Size  .............*/
+
+header,
+section,
+footer {
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* = Header
+-------------------------------------------------------------- */
+
+header {
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/*.............. Top Banner  .............*/
+header,
+#infographic,
+#shop,
+#supporters,
+#post {
+  background-image: url(assets/img/bg_fill.png);
+}
+.banner ul {
+  padding-left: 0;
+}
+.banner ul li {
+  list-style: none;
+  display: inline-block;
+}
+.banner .btn {
+  border-radius: 0;
+  font-family: oswald_stencilregular;
+}
+.banner .btn a {
+  color: #fff;
+  text-transform: uppercase;
+}
+.banner .btn.program {
+  background-color: #37516B;
+}
+.banner .btn.involved {
+  background-color: #4F708D;
+}
+.banner .btn.donate {
+  background-color: #F34128;
+}
+.banner .mission {
+  font-size: 10px;
+  width: 300px;
+  font-family:open-sans;
+}
+.banner .form.box {
+  float: right;
+  font-family: open-sans;
+  color: #fff;
+  background-color: #cc0000;
+  margin-bottom: 60px;
+  width: 57%;
+  height: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+.banner .form.box .title {
+  padding: 10px;
+}
+/*.............. Mobile .............*/
+
+@media screen and (max-width: 767px) {
+  header .desktop,
+  #nav {
+    display: none;
+  }
+  .banner .btn_box {
+    margin-top: 20px;
+    text-align: center;
+  }
+  .banner .btn a {
+    font-size: 10px;
+  }
+  .banner .mission {
+    width: 100%;
+    margin-top: 15px;
+  }
+  .banner .form.box {
+
+    float: none;
+    margin-top: 20px;
+    margin-bottom: 60px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .banner .form .title {
+    padding-top: 10px;
+  }
+  .banner .btn {
+    margin-bottom: 10px;
+  }
+}
+@media screen and (min-width: 768px) {
+  header .mobile {
+    display: none;
+  }
+}
+header .navbar.navbar-default {
+  background-color: #005d81;
+  border: none;
+}
+.navbar-default .navbar-collapse {
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  margin-top: 30px;
+}
+header .navbar-default .navbar-toggle {
+  border-color: #fff;
+}
+header .navbar-default .navbar-toggle:hover,
+header .navbar-default .navbar-toggle:focus {
+  background-color: #222222;
+}
+header .navbar-default .navbar-toggle .icon-bar {
+  background-color: #fff;
+}
+header .logo {
+  text-align: center;
+  width: 35%;
+  padding: 12px;
+}
+header .navbar {
+  margin-bottom: 0;
+}
+.navbar .navbar-nav {
+  display: inline-block;
+  float: none;
+  vertical-align: top;
+  font-family: 'lato';
+  font-weight: 100;
+  text-transform: uppercase;
+}
+.navbar-nav > li {
+  padding: 0 55px;
+}
+.navbar .navbar-collapse {
+  text-align: left;
+}
+header .navbar .navbar-nav > li > a {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 18px;
+  font-family: 'oswald_stencilregular';
+  color: #fff;
+  text-transform: uppercase;
+}
+header .navbar-toggle {
+  margin-top: 29px;
+  margin-right: 38px;
+}
+header .navbar-default .navbar-collapse {
+  margin-top: 0;
+  border-color: transparent;
+}
+#menu-item-home > a {
+  background-color: transparent !important;
+}
+@media screen and (max-width: 767px) {
+  header .logo {
+    width: 100px;
+  }
+}
+/*.............. Main Nav .............*/
+#nav {
+  background-color: #003263;
+  height: 75px;
+}
+.menu {
+  padding-top: 14px;
+}
+.menu ul {
+  padding-left: 0;
+}
+.menu ul li {
+  display: inline-block;
+  padding-right: 26px;
+  font-size: 15px;
+  font-family: 'oswaldbook';
+  text-transform: uppercase;
+  letter-spacing: 2px;
+} 
+.menu ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+.menu.right ul li:last-child {
+  padding: 0;
+}
+@media screen and (max-width: 767px) {
+  header .nav_main {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  header .navbar {
+    display: none;
+  }
+  header .logo {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: -75px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .menu ul li {
+    padding-right: 19px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .menu ul li {
+    padding-right: 10px;
+    font-size: 12px;
+  }
+  .menu {
+    padding-top: 10px;
+  }
+}
+/* = Front Page 
+-------------------------------------------------------------- */
+
+#featured.background {
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+/*............. featured video .............*/
+
+#featured .container {
+  padding-top: 150px;
+  padding-bottom: 200px;
+}
+#featured .content,
+#featured .content a {
+  color: #fff;
+  font-family: open-sans;
+  font-weight: 200;
+}
+
+#featured iframe {
+  width: 100%;
+  height: 50%;
+}
+@media screen and (max-width: 767px) {
+  #featured iframe {
+    height: 59%;
+  }
+}
+@media screen and (max-width: 480px) {
+  #featured iframe {
+    height: 30%;
+  }
+}
+
+/*............. panels .............*/
+#panels {
+  background-color: #20252a;
+}
+#panels .panel {
+  background-color: #fff;
+  text-align: center;
+  position: relative;
+  bottom: 115px;
+}
+#panels .panel .icon {
+  margin-top: 30px;
+}
+#panels .panel .icon {
+  margin-bottom: 60px;
+}
+#panels .panel .title h2 {
+  font-family: oswaldbold;
+}
+#panels .panel .subtitle {
+  font-family: open-sans;
+  color: #34495e;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+}
+#panels .panel .btn {
+  margin-bottom: 40px;
+  background-color: #005d81;
+  color: #fff;
+  border-radius: 2px;
+  border-bottom: 4px solid #003750;
+  width: 50%;
+}
+/*............. infographic .............*/
+#infographic .graphic {
+  text-align: center;
+  padding: 60px 0;
+}
+@media screen and (max-width: 767px) {
+  #infographic .graphic {
+    padding: 60px 24px;
+  }
+}
+/*............. shop .............*/
+#shop .shop.box {
+  margin-bottom: 20px;
+}
+#shop .shop.box .title {
+  font-family: oswaldbold;
+  font-size: 20px;
+  color: #252c33;
+  min-height: 400px;
+  text-transform: uppercase;
+}
+/*............. supporters .............*/
+#supporters {
+  text-align: center;
+}
+#supporters .box {
+  margin-bottom: 80px;
+}
+#supporters ul {
+  list-style: none;
+  padding-left: 0;
+}
+#supporters ul li {
+  display: inline-block;
+  padding-right: 20px;
+}
+#supporters .heading .title,
+#supporters .heading .subtitle {
+  font-family: oswaldbold;
+  color: #252c33;
+  text-transform: uppercase;
+}
+#supporters .heading .subtitle {
+  color: #999999;
+  font-size: 15px;
+  font-family: oswaldlight;
+}
+@media screen and (max-width: 767px) {
+  #supporters ul li {
+    margin-bottom: 20px;
+  }
+}
+/* = Page
+-------------------------------------------------------------- */
+
+.page .post {
+  margin-top: 50px;
+  color: #34495e;
+}
+.page .post.title h1 {
+  text-transform: uppercase;
+  font-family: oswaldbold;
+}
+.page .thumb {
+  margin-bottom: 40px;
+}
+.page .thumb img {
+  width: 100%;
+}
+.page .content {
+  font-family: myriad-pro;
+}
+
+/*sidebar*/
+.page .sidebar .logo {
+  margin-bottom: 30px;
+}
+.page .sidebar .logo img {
+  width: 100%;
+}
+.page .sidebar .msg {
+  text-align: center;
+  font-family: myriad-pro;
+}
+
+/* = Contact Page
+-------------------------------------------------------------- */
+.form {
+  font-family: 'lato';
+  font-size: 10px;
+}
+.form p {
+  font-size: 14px;
+  text-align: center;
+  padding-bottom: 50px;
+}
+.form select {
+  -webkit-appearance: none;
+  padding: 5px;
+  border-radius: 0;
+}
+.form .ginput_container input,
+.form .ginput_container select {
+  width: 49%;
+  float: left;
+  height: 40px;
+  margin-bottom: 20px;
+  border-radius: 0px;
+  color: #777777;
+}
+.form .ginput_container input:focus,
+.form .ginput_container select:focus,
+.form .ginput_container textarea:focus {
+  outline: none !important;
+  -webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  box-shadow: none !important;
+  border-color: #777777;
+}
+.form .ginput_container select {
+  padding-left: 10px;
+}
+.form input[placeholder],
+.form input::-webkit-input-placeholder,
+.form textarea::-webkit-input-placeholder {
+  color: #777777;
+}
+.form .ginput_container textarea {
+  width: 49%;
+  float: right;
+  height: 158px;
+  position: relative;
+  bottom: 20px;
+  border-radius: 0px;
+}
+.form input[type="submit"] {
+  float: right;
+  border-radius: 0px;
+  background: #777777;
+  border: none;
+  color: #fff;
+  text-transform: uppercase;
+}
+.form .gform_wrapper .gfield_required {
+  display: none;
+}
+
+/* = Footer
+-------------------------------------------------------------- */
+.end {
+  background-color: #20252a;
+  color: #fff;
+  font-family: oswaldlight;
+}
+.end .donation {
+
+}
+.end .donation .title,
+.end .social .title,
+.end .contact.meta .title,
+.end .social .title {
+  text-transform: uppercase;
+  font-size: 20px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+.end .donation.msg,
+.end .contact .address,
+.end .contact .phone,
+.end .contact .email {
+  font-family: 'Quattrocento', serif;
+  font-size: 12px;
+}
+.end .social .links ul {
+  list-style: none;
+  padding-left: 0;
+  width: 100%;
+}
+.end .social .links ul li {
+  margin-right: 10px;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+.end .social .links .btn {
+  color: #fff;
+  border-radius: 0;
+}
+.end .social .links .btn a {
+  color: #fff;
+}
+.end .social .links .btn i {
+  font-size: 20px;
+  padding: 5px;
+}
+.end .social .links .btn.facebook {
+  background-color: #334F8D;
+}
+.end .social .links .btn.facebook i {
+  padding: 8px 11px;
+}
+.end .social .links .btn.twitter {
+  background-color: #0096CA;
+}
+.end .social .links .btn.twitter i {
+  padding: 8px 7px;
+}
+.end .social .links .btn.linkedin {
+  background-color: #0E6B9E;
+}
+.end .social .links .btn.linkedin i {
+  padding: 8px 7px;
+}
+.end .social .links .btn.instagram {
+  background-color: #76503E;
+}
+.end .social .links .btn.instagram i {
+  padding: 8px 8px;
+}
+.end .social .links .btn.rss {
+  background-color: #E58015;
+}
+.end .social .links .btn.rss i {
+  padding: 8px 8px;
+}
+.end .social .links .btn.youtube {
+  background-color: #BC2A27;
+}
+.end .social .links .btn.youtube i {
+  padding: 8px 8px;
+}
+.end .social .links .btn.pinterest {
+  background-color: #98092E;
+}
+.end .social .links .btn.pinterest i {
+  padding: 8px 8px;
+}
+.end .social .links .btn.dribble {
+  background-color: #ED6B99;
+}
+.end .social .links .btn.dribble i {
+  padding: 8px 8px;
+}
+.end .social .links .btn.google {
+  background-color: #A91C1D;
+}
+.end .social .links .btn.google i {
+  padding: 8px 8px;
+}
+.end .social .links .btn.skype {
+  background-color: #00A7F3;
+}
+.end .social .links .btn.skype i {
+  padding: 8px 8px;
+}
+
+.end .footer .menu {
+  float: right;
+  padding-left: 0;
+  list-style: none;
+  display: inline-block;
+}
+.end .footer .menu li {
+  display: inline-block;
+  padding-right: 26px;
+  font-size: 11px;
+  font-family: 'oswaldbook';
+  text-transform: uppercase;
+  letter-spacing: 2px;
+} 
+.end .footer .menu li a {
+  color: #fff;
+  text-decoration: none;
+}
+.end .footer .menu .current_page_item a {
+  color: #cc0000;
+}
+.end .lvlymb {
+  margin-top: 15px;
+}
+
+
+/*Test myCode*/
+
+/** {
+  background: #000 !important;
+  color: #0f0 !important;
+  outline: solid #f00 1px !important;
+}*/
+
+
