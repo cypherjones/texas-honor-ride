@@ -15,7 +15,7 @@
     <section id="featured" class="background" style="background-image: url(<?php the_field('background_image') ?>)">
       <div class="container">
         <div class="row">
-          <div class="col-md-8">
+          <div class="col-md-6">
 
             <?php 
 
@@ -29,7 +29,7 @@
 
             <?php endif; ?>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-6">
             <div class="content">
               <?php 
 
@@ -57,7 +57,7 @@
               <div class="icon"><img src="<?php the_sub_field('icon') ?>" alt=""></div>
               <div class="title"><h2><?php the_sub_field('title') ?></h2></div>
               <div class="subtitle"><?php the_sub_field('subtitle') ?></div>
-              <div class="btn"><a href=""></a><?php the_sub_field('button_text') ?></div>
+              <div class="btn"><a href="<?php the_sub_field('button_link') ?>"><?php the_sub_field('button_text') ?></a></div> 
             </div>
           </div>
         <?php endwhile; endif; ?>

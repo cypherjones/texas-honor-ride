@@ -57,6 +57,9 @@
 
     <link href="<?php bloginfo('template_directory' ); ?>/css/bootstrap.css" rel="stylesheet">
     <script src="<?php bloginfo('template_directory' ); ?>/js/bootstrap.js" type='text/javascript'></script>
+
+    <!-- instafeed -->
+    <script type="text/javascript" src="<?php bloginfo('template_directory' ); ?>/js/instafeed.min.js"></script>
     
 
   
@@ -134,8 +137,16 @@
               <div class="title">
                 Sign Up for Email Updates
               </div>
-              <div class="form">
-                
+              <div class="form little">
+                <?php
+
+                $form = get_field('sign_up_for_emails_form', 'option');
+
+                if (! empty($form)) :
+                  echo do_shortcode($form );
+                endif;
+
+               ?>
               </div>
             </div>
           </div>
@@ -147,17 +158,17 @@
     <section id="nav">
       <div class="container nav_main">
         <div class="row">
-          <div class="col-sm-4 col-md-4">
+          <div class="col-sm-5 col-md-4">
             <div class="menu left">
               <?php wp_nav_menu( array( 'theme_location' => 'left-nav')); ?>
             </div>
           </div>
-          <div class="col-sm-4 col-md-4">
+          <div class="col-sm-2 col-md-4">
             <div class="logo">
-              <img src="<?php the_field('logo', 'option'); ?>" alt="">
+              <a href="<?php bloginfo('url' ); ?>"><img src="<?php the_field('logo', 'option'); ?>" alt=""></a>
             </div>
           </div>
-          <div class="col-sm-4 col-md-4">
+          <div class="col-sm-5 col-md-4">
             <div class="menu right">
               <?php wp_nav_menu( array( 'theme_location' => 'right-nav')); ?>
             </div>
@@ -210,7 +221,7 @@
 
       <div class="container banner background mobile">
         <div class="row">
-          <div class="col-xs-6">
+          <div class="col-xs-12">
             <div class="btn_box">
                   <?php 
 
@@ -258,7 +269,7 @@
                 </ul>
             </div>
           </div>
-          <div class="col-xs-6">
+          <div class="col-xs-12">
             <div class="mission">
               <?php
 
@@ -277,8 +288,16 @@
             <div class="title">
               Sign Up for Email Updates
             </div>
-            <div class="form">
-              
+            <div class="form little">
+              <?php
+
+                $form = get_field('sign_up_for_emails_form', 'option');
+
+                if (! empty($form)) :
+                  echo do_shortcode($form );
+                endif;
+
+               ?>
             </div>
           </div>
         </div>

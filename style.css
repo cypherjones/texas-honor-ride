@@ -178,10 +178,12 @@ header,
 .banner .btn {
   border-radius: 0;
   font-family: oswald_stencilregular;
+  margin-bottom: 10px;
 }
 .banner .btn a {
   color: #fff;
   text-transform: uppercase;
+  font-size: 11px;
 }
 .banner .btn.program {
   background-color: #37516B;
@@ -193,58 +195,210 @@ header,
   background-color: #F34128;
 }
 .banner .mission {
-  font-size: 10px;
+  font-size: 17px;
   width: 300px;
   font-family:open-sans;
+  width: 100%;
+  margin-top: 15px;
+  font-size: 12px;
+  text-align: center;
+  margin-bottom: 30px;
 }
+.banner .btn_box {
+  margin-top: 20px;
+  text-align: center;
+}
+.banner .form .title {
+  padding-top: 10px;
+}
+@media screen and (min-width: 375px) {
+  .banner .btn a {
+    font-size: 13px;
+  }
+  .banner .mission {
+    font-size: 12px;
+  }
+}
+@media screen and (min-width: 480px) {
+  .banner .btn a {
+    font-size: 15px;
+  }
+  .banner .mission {
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 667px) {
+  .banner .btn a {
+    font-size: 19px;
+  }
+  .banner .mission {
+    font-size: 17px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .banner .btn_box {
+    margin-top: 0;
+  }
+  .banner ul {
+    margin-bottom: 0;
+  }
+  .banner .btn a {
+    font-size: 14px;
+  }
+  .banner .mission {
+    font-size: 12px;
+    text-align: left;
+    margin-top: 0;
+    margin-bottom: 53px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .banner .btn_box {
+    text-align: left;
+  }
+  .banner .mission {
+    width: 78%;
+    margin-bottom: 21px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .banner .mission {
+    width: 64%;
+  }
+}
+/*.............. Little Form  .............*/
 .banner .form.box {
-  float: right;
+  float: none;
   font-family: open-sans;
   color: #fff;
   background-color: #cc0000;
-  margin-bottom: 60px;
-  width: 57%;
-  height: 40px;
+  margin-bottom: 15px;
+  width: 95%;
+  height: 85px;
   margin-left: auto;
   margin-right: auto;
-  border-bottom-right-radius: 4px;
-  border-bottom-left-radius: 4px;
 }
 .banner .form.box .title {
   padding: 10px;
+  text-align: center;
 }
+.form.little input[placeholder],
+.form.little input::-webkit-input-placeholder,
+.form.little textarea::-webkit-input-placeholder {
+  color: #777777;
+  font-size: 10px;
+}
+#gform_wrapper_1 ul li.gfield {
+  clear: none ;
+}
+#gform_wrapper_1 .top_label input.medium, 
+#gform_wrapper_1 .top_label select.medium {
+  width: 100% ;
+}
+#gform_wrapper_1 {
+  margin: 0 0 ;
+}
+.banner .form.little label {
+  display: none;
+}
+.banner .form.little #gform_wrapper_1 ul {
+  margin-bottom: 0;
+  padding-left: 5px;
+}
+.banner .form.little #gform_wrapper_1 li {
+  display: inline-block;
+  float: left;
+}
+.banner .form.little #field_1_1 {
+  width: 52%;
+  padding-right: 2px;
+}
+.banner .form.little #field_1_2 {
+  width: 33%;
+}
+.banner .form.little #gform_wrapper_1 .gfield_required {
+  display: none;
+}
+.banner .form.little #gform_wrapper_1 .gform_button {
+  margin-left: 2px;
+  padding: 13px 12px !important;
+  background-color: #428bca !important;
+  text-align: right !important;
+}
+.page-contact .banner .form.little #gform_wrapper_1 .gform_button,
+.page-register-to-ride .banner .form.little #gform_wrapper_1 .gform_button {
+  margin-left: 2px;
+  padding: 13px 12px !important;
+  background-color: #428bca !important;
+  text-align: right !important;
+  float: right;
+  position: relative;
+  top: -63px;
+  left: -6px;
+}
+#gform_wrapper_1 .gform_footer input[type=image] {
+  background-color: #428bca;
+}
+@media screen and (min-width: 375px) {
+  .banner .form.box {
+    margin-bottom: 20px;
+  }
+}
+@media screen and (min-width: 480px) {
+  .banner .form.box {
+    margin-bottom: 40px;
+  }
+}
+@media screen and (min-width: 767px) {
+  .banner .form.box {
+    float: right;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .banner .form.box {
+    width: 75%;
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .banner .form.box {
+    width: 58%;
+  }
+}
+/*.............. Register to Ride .............*/
+#gform_wrapper_3 {
+  display: block !important;
+}
+#gform_next_button_3_11,
+#gform_previous_button_3 {
+  background-color: #428bca;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  padding: 7px 9px;
+  margin-bottom: 0;
+}
+
 /*.............. Mobile .............*/
+
 
 @media screen and (max-width: 767px) {
   header .desktop,
   #nav {
     display: none;
   }
-  .banner .btn_box {
-    margin-top: 20px;
-    text-align: center;
-  }
-  .banner .btn a {
-    font-size: 10px;
-  }
-  .banner .mission {
-    width: 100%;
-    margin-top: 15px;
-  }
-  .banner .form.box {
+  
+ /* .banner .form.box {
 
     float: none;
     margin-top: 20px;
     margin-bottom: 60px;
     margin-left: auto;
     margin-right: auto;
-  }
-  .banner .form .title {
-    padding-top: 10px;
-  }
-  .banner .btn {
-    margin-bottom: 10px;
-  }
+  }*/
+  
 }
 @media screen and (min-width: 768px) {
   header .mobile {
@@ -352,28 +506,37 @@ header .navbar-default .navbar-collapse {
     display: none;
   }
   header .logo {
-    width: 100%;
+    width: 182%;
     margin-left: auto;
     margin-right: auto;
     position: relative;
-    top: -75px;
+    top: -58px;
+    left: -32px
+  }
+
+  .menu ul li {
+    font-size: 12px;
+    padding-right: 15px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  header .logo {
+    width: 100%;
+    left: 0;
+  }
+  .menu ul li {
+    font-size: 13px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  header .logo {
+    top: -111px;
+  }
+  .menu ul li {
+    font-size: 16px;
   }
 }
 
-@media screen and (max-width: 1199px) {
-  .menu ul li {
-    padding-right: 19px;
-  }
-}
-@media screen and (max-width: 991px) {
-  .menu ul li {
-    padding-right: 10px;
-    font-size: 12px;
-  }
-  .menu {
-    padding-top: 10px;
-  }
-}
 /* = Front Page 
 -------------------------------------------------------------- */
 
@@ -386,9 +549,14 @@ header .navbar-default .navbar-collapse {
 /*............. featured video .............*/
 
 #featured .container {
-  padding-top: 150px;
+  padding-top: 40px;
   padding-bottom: 200px;
 }
+
+/*#featured .container {
+  padding-top: 150px;
+  padding-bottom: 200px;
+}*/
 #featured .content,
 #featured .content a {
   color: #fff;
@@ -398,19 +566,32 @@ header .navbar-default .navbar-collapse {
 
 #featured iframe {
   width: 100%;
-  height: 50%;
+  height: 40%;
+  margin-bottom: 40px;
 }
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 480px) {
   #featured iframe {
-    height: 59%;
+    height: 80%;
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 568px) {
   #featured iframe {
-    height: 30%;
+    height: 90%;
   }
 }
-
+@media screen and (min-width: 768px) {
+  #featured iframe {
+    height: 39%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  #featured .container {
+    padding-top: 100px;
+  }
+  #featured iframe {
+    height: 34%;
+  }
+}
 /*............. panels .............*/
 #panels {
   background-color: #20252a;
@@ -445,6 +626,15 @@ header .navbar-default .navbar-collapse {
   border-radius: 2px;
   border-bottom: 4px solid #003750;
   width: 50%;
+}
+#panels .panel .btn a {
+  color: #fff;
+  text-decoration: none;
+}
+@media screen and (min-width: 1024px) {
+  #panels .panel .icon {
+    min-height: 81px;
+  }
 }
 /*............. infographic .............*/
 #infographic .graphic {
@@ -533,7 +723,7 @@ header .navbar-default .navbar-collapse {
 
 /* = Contact Page
 -------------------------------------------------------------- */
-.form {
+/*.form {
   font-family: 'lato';
   font-size: 10px;
 }
@@ -591,7 +781,7 @@ header .navbar-default .navbar-collapse {
 }
 .form .gform_wrapper .gfield_required {
   display: none;
-}
+}*/
 
 /* = Footer
 -------------------------------------------------------------- */

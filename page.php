@@ -29,7 +29,7 @@
             <div class="sidebar">
             <?php if(have_rows('partner', 'option')) : while (have_rows('partner', 'option')) : the_row(); ?>
               <div class="logo">
-                <img src="<?php the_sub_field('logo_or_image', 'option') ?>" alt="">
+                <a href="<?php the_sub_field('partner_url', 'option') ?>"><img src="<?php the_sub_field('logo_or_image', 'option') ?>" alt=""></a>
               </div>
               <div class="msg">
                 <?php the_sub_field('partner_msg', 'option') ?>
